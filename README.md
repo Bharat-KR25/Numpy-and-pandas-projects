@@ -169,70 +169,101 @@ share that folder with view access
 
 # Module-End -5
 
-# Python DA Assignment 2-Data Visualization
+# Module End Assignment: Python For Data Analysis
+#      “Social Media Engagement Analytics”
 
 Assignment Task Overview
+Project Title: Social Media Engagement Analytics Using Python
 Problem Statement
-Taxi services generate large amounts of trip data daily, which can be used to understand patterns and
-improve operations. However, raw data often contains missing values and is difficult to interpret
-without proper analysis.
-In this project, you will act as a data analyst to clean, analyze, and visualize taxi data. You will handle
-missing values, explore trends, and create visualizations to gain insights into fare, distance, and
-customer behavior using Pandas, Matplotlib, and Seaborn.
+Social media platforms generate massive volumes of engagement data—likes, comments, shares,
+impressions, watch time, and more. Analyzing such data helps companies understand user
+behavior, identify trends, and improve content performance.
+In this assignment, you will work with a social media dataset containing social media engagement
+metrics. The task involves data cleaning, transformation, NumPy/Pandas operations,
+exploratory data analysis, visualizations, and generating insights.
+Dataset Provided: social_media_engagement_5000.csv
 Assignment Tasks:
-1) Loading the Taxis Dataset using the following code:
+❖ Task 1 — Data Import & Setup
+○ Import CSV using Pandas
+○ Check/convert data types
+○ Convert date columns to datetime
 
-import seaborn as sns
-# Load the 'taxis' dataset
-df = sns.load_dataset("taxis")
+❖ Task 2 — Data Cleaning
+● Cleaning Missing Data
+■ Detect missing values (isnull(), isna())
+■ Handle using: dropna(), fillna(), median/mode, forward/backward-fill
+● Duplicate Handling- Identify & remove duplicates
+● Data Formatting
+■ Fix incorrect data types
+■ Standardize categories (e.g., gender labels)
+■ Correct unrealistic values in likes, comments, shares
 
-2) Handling Missing Values
-● Check for missing values in the dataset and identify columns with missing data.
-● Impute missing values using appropriate strategies based on the column type (e.g.,
-using the mean, median, or mode for numerical columns and the mode for categorical
-columns).
-● For columns that are critical and cannot be reasonably imputed, remove rows with
-missing values to maintain data integrity.
-3) Visualizations using Matplotlib/Pandas Plot:
-★ Line Chart
-Plot a line chart to visualize the fare over time, using the pickup timestamp as the x-axis and
-fare as the y-axis. Ensure the pickup column is converted to a datetime format before plotting.
+● Feature Cleaning
+■ Extract hashtag count
+■ Clean sentiment labels
+❖ Task 3 — Data Exploration using Pandas
+Perform the following:
+● View dataset structure using head(), tail(), shape, and columns.
+● Check data types and info with info() and dtypes.
+● Generate summary statistics using describe().
+● Analyze categorical distributions using value_counts(), unique(), and nunique().
+● Create a correlation matrix for numeric fields.
+● Use groupby() to summarize metrics (e.g., avg likes by post type, impressions by
+country).
 
-★ Bar Chart
-Create a bar chart to show the total fare for each pickup_borough. Group the data by
-pickup_borough and sum the fare for each group.
-★ Pie Chart
-Plot a pie chart showing the distribution of trips based on the payment method (credit card,
-cash, etc.). Each slice should represent the count of trips for a specific payment method.
-★ Histogram
-Create a histogram to visualize the distribution of distance. Customize the number of bins for
-better granularity and ensure the plot is easy to interpret.
-★ Box Plot
-Plot a box plot to visualize the distribution of tip amounts for each pickup_borough. Use
-pickup_borough as the categorical axis and tip as the numeric axis.
+❖ Task 4 — Data Wrangling
+● Use merge, concat, or join if combining DataFrames.
+● Create new fields such as engagement_score, log-transformed metrics
+(optional), and hashtag count.
+● Perform groupby summaries by post_type, country, and sentiment.
+❖ Task 5 — Statistical Analysis
+Compute descriptive stats for “likes, comments, shares, watch_time,
+engagement_rate, followers” columns:
+● Mean, median, mode
+● Standard deviation, variance
+● Percentiles
+● (Optional) Skewness and kurtosis
 
-Visualizations using Seaborn:
-★ Count Plot
-Create a count plot to visualize the number of trips in each pickup_borough. The x-axis should
-represent the boroughs, and the y-axis should show the count of trips.
-★ Scatter Plot
-Plot a scatter plot to show the relationship between distance and fare. Use distance on the
-x-axis and fare on the y-axis to visualize any correlation. Color the points based on the
-pickup_borough to differentiate the trips by their respective boroughs.
-★ Heatmap
-Plot a heatmap to visualize the correlation between numerical variables such as distance, fare,
-tip, tolls, and total. Use a correlation matrix to highlight the relationships.
+❖ Task 6 — Data Visualization (Min. 8 Plots Required)
+● Matplotlib
+○ Scatter: likes vs impressions
+○ Line: daily engagement trend
+○ Bar: posts by category
+○ Pie: gender distribution
+○ Histogram: age
+○ Box: engagement rate
+● Seaborn
+○ Count plot: post type
+○ Bar plot: avg likes by category
+○ Violin: followers vs sentiment
+○ Pair plot: numeric features
+○ Heatmap: correlation matrix
+○ Swarm plot: engagement vs device
+● Plotly (Interactive)
+○ Interactive line chart/bar chart/bubble/scatter chart
 
-★ Pair Plot
-Create a pair plot to visualize the pairwise relationships between distance, fare, tip, and total.
-Color the data points according to the pickup_zone column. to compare how different zones
-affect these variables.
-★ Violin Plot
-Plot a violin plot to show the distribution of fare for each payment method. Use the payment
-method as the categorical axis and fare as the numeric axis to visualize its distribution.
+❖ Final Insights should include the following analysis:
+● Content Performance
+○ Which post types have the highest engagement?
+○ Best-performing content category?
+○ Which countries have the highest average engagement rate?
+● User Trends
+○ How age affects engagement
+○ Performance difference for verified accounts
+● Behavioral Insights
+○ Best time of day for impressions
+○ Device type impact on watch time
+● Sentiment Analysis
+○ Which sentiment performs best
+○ Behavior of negative/neutral sentiment posts
 
-Deliverables:
-● Complete the assignment in Google Colab or a Jupyter Notebook.
+Deliverables
+● Complete the assignment in Google Colab or Jupyter Notebook.
+● The Python file must include the following: Code, Outputs, Visualizations, and Explanations for
+each code, wherever possible.
+● For Google Colab, share the notebook link with "View" access. If using Jupyter, upload the
+notebook to Google Drive and ensure "View" access is enabled.
+● Clear one-page summary with findings supported by analysis
 ● For Google Colab, share the notebook link with "View" access. If using Jupyter, upload the
 notebook to Google Drive and ensure "View" access is enabled.
 ● Clear one-page summary with findings supported by analysis
