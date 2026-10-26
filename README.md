@@ -11,11 +11,11 @@ Three Jupyter notebooks that take me from NumPy and Pandas fundamentals to a ful
 
 ## Projects
 
-| # | Project | What it covers | Open | Details |
-|---|---------|----------------|------|---------|
-| 1 | **NumPy & Pandas Basics** | arrays, Series, DataFrames, indexing, filtering, grouping | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bharat-KR25/Numpy-and-pandas-projects/blob/main/assn_1.ipynb) | [docs](docs/assn_1.md) |
-| 2 | **NYC Taxi Trips** | missing-value handling and 10 visualizations on the Seaborn `taxis` dataset | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bharat-KR25/Numpy-and-pandas-projects/blob/main/assn2.ipynb) | [docs](docs/assn2.md) |
-| 3 | **Social Media Engagement Analysis** | cleaning, feature engineering, statistics and 16 visualizations on 5,000 posts | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bharat-KR25/Numpy-and-pandas-projects/blob/main/PANDAS__FINAL_MODULE_AS.ipynb) | [docs](docs/pandas_final_module.md) |
+| # | Project | What it covers | Open | 
+|---|---------|----------------|------|
+| 1 | **NumPy & Pandas Basics** | arrays, Series, DataFrames, indexing, filtering, grouping | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bharat-KR25/Numpy-and-pandas-projects/blob/main/assn_1.ipynb) |
+| 2 | **NYC Taxi Trips** | missing-value handling and 10 visualizations on the Seaborn `taxis` dataset | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bharat-KR25/Numpy-and-pandas-projects/blob/main/assn2.ipynb) | 
+| 3 | **Social Media Engagement Analysis** | cleaning, feature engineering, statistics and 16 visualizations on 5,000 posts | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bharat-KR25/Numpy-and-pandas-projects/blob/main/PANDAS__FINAL_MODULE_AS.ipynb) | 
 
 ## Learning Path
 
